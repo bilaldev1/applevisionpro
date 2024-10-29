@@ -52,11 +52,4 @@
   .w-inherit {
     width: inherit;
   }
-
-  .swiper-pagination {
-    width: auto !important;
-    background-color: #000;
-    border-radius: 15px;
-    padding: 10px 4px;
-  }
 }
