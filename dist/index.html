@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Vision Pro - Apple</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+
+  <body class="w-full relative overflow-x-hidden text-black fill-black">
+    <header
+      class="w-full z-50 fixed top-0 left-0 flex flex-col items-center text-white bg-black"
+    >
+      <div class="w-full max-w-[1024px] p-3 flex justify-between items-center">
+        <a href="index.html" class="text-xl font-semibold">Apple Vision Pro</a>
+
+        <nav class="flex items-center gap-5 text-xs">
+          <a class="sf-pro-text cursor-default text-white/60">Overview</a>
+          <a href="#" class="sf-pro-text transition-all hover:text-blue"
+            >Guided Tour</a
+          >
+          <a href="#" class="sf-pro-text transition-all hover:text-blue"
+            >Tech Specs</a
+          >
+          <a
+            href="#"
+            class="sf-pro-text transition-all border rounded-full py-1 px-3 hover:bg-white hover:text-black"
+            >Book a demo</a
+          >
+          <a
+            href="#"
+            class="sf-pro-text py-1 px-3 rounded-full bg-blue text-white transition-all hover:bg-blue/90"
+            >Buy</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="w-full relative">
+      <section id="banner" class="w-full relative overflow-hidden bg-black">
+        <div
+          id="initial-banner"
+          class="w-full h-[calc(100vh+1px)] relative overflow-hidden"
+        >
+          <div class="overflow-hidden size-full">
+            <video
+              id="banner-initial-video"
+              src="./assets/videos/banner1.mp4"
+              class="size-full scale-[1.9] pt-8 relative z-[2]"
+              muted
+            ></video>
+          </div>
+
+          <div
+            id="banner-initial-content"
+            class="w-full bg-none absolute bottom-[10%] left-0 flex flex-col items-center justify-center gap-6 z-[2]"
+          >
+            <img
+              src="./assets/images/apple_vision_pro_logo.png"
+              alt="Apple Vision Pro Logo"
+              class="size-auto"
+            />
+            <a
+              href="#"
+              class="text-orange fill-orange flex items-center hover:underline gap-1"
+            >
+              <span class="text-2xl leading-none -mt-1">
+                Watch the Guided Tour
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="15"
+                  viewBox="0 0 6 11"
+                >
+                  <polyline
+                    points=".675 .925 5.323 5.5 .675 10.075"
+                    fill="none"
+                    stroke="currentcolor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.1"
+                  /></svg></span
+            ></a>
+          </div>
+        </div>
+
+        <div
+          id="after-scroll-banner"
+          class="absolute top-0 left-0 w-full h-[calc(100vh+1px)] overflow-hidden"
+        >
+          <div id="after-scroll-videos" class="size-full relative">
+            <video
+              src="./assets/videos/banner2.mp4"
+              class="size-full object-cover object-center opacity-0 absolute top-0 left-0"
+              muted
+              loop
+            ></video>
+            <video
+              src="./assets/videos/banner3.mp4"
+              class="size-full object-cover object-center opacity-0 absolute top-0 left-0"
+              muted
+              loop
+            ></video>
+            <video
+              src="./assets/videos/banner4.mp4"
+              class="size-full object-cover object-center opacity-0 absolute top-0 left-0"
+              muted
+              loop
+            ></video>
+            <video
+              src="./assets/videos/banner5.mp4"
+              class="size-full object-cover object-center opacity-0 absolute top-0 left-0"
+              muted
+              loop
+            ></video>
+          </div>
+
+          <div
+            id="after-scroll-headings"
+            class="w-full h-[7.5rem] relative flex flex-col items-center"
+          >
+            <h3
+              id="welcome-heading"
+              class="max-w-[1000px] text-center text-5xl font-bold leading-tight absolute text-transparent bg-white bg-clip-text mix-blend-difference z-[1]"
+            >
+              Welcome to the era of spatial computing.
+            </h3>
+            <h3
+              class="max-w-[1000px] text-center text-5xl font-bold leading-tight absolute text-transparent bg-white bg-clip-text mix-blend-difference z-[1]"
+            >
+              Apple Vision Pro seamlessly blends digital content with your
+              physical space.
+            </h3>
+            <h3
+              class="max-w-[1000px] text-center text-5xl font-bold leading-tight absolute text-transparent bg-white bg-clip-text mix-blend-difference z-[1]"
+            >
+              You navigate simply by using your eyes, hands, and voice.
+            </h3>
+            <h3
+              class="max-w-[1000px] text-center text-5xl font-bold leading-tight absolute text-transparent bg-white bg-clip-text mix-blend-difference z-[1]"
+            >
+              So you can do the things you love in ways never before possible.
+            </h3>
+
+            <h3
+              class="max-w-[1000px] text-center text-5xl font-bold leading-tight absolute text-transparent bg-white bg-clip-text mix-blend-difference z-[1]"
+            >
+              You've never seen everything like this before. Explore Apple
+              Vision Pro
+            </h3>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="guide-section"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          class="w-full max-w-[1000px] px-3 py-60 flex flex-col items-center gap-16"
+        >
+          <img
+            src="./assets/images/apple_vision_pro_logo_black.png"
+            alt="Apple Vision Pro Black Logo"
+            class="w-auto"
+          />
+
+          <div id="guide-links" class="flex flex-col gap-5 items-center">
+            <a
+              href="#"
+              class="text-orange fill-orange flex items-center hover:underline gap-1"
+            >
+              <span class="text-2xl leading-none font-bold -mt-1">
+                Watch the film
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="24"
+                  height="24"
+                >
+                  <path
+                    d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c7.6-4.2 16.8-4.1 24.3 .5l144 88c7.1 4.4 11.5 12.1 11.5 20.5s-4.4 16.1-11.5 20.5l-144 88c-7.4 4.5-16.7 4.7-24.3 .5s-12.3-12.2-12.3-20.9V168c0-8.7 4.7-16.7 12.3-20.9z"
+                  /></svg></span
+            ></a>
+
+            <a
+              href="#"
+              class="text-orange fill-orange flex items-center hover:underline gap-1"
+            >
+              <span class="text-2xl font-bold leading-none -mt-1">
+                Watch the Guided Tour
+              </span>
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="10"
+                  height="15"
+                  viewBox="0 0 6 11"
+                >
+                  <polyline
+                    points=".675 .925 5.323 5.5 .675 10.075"
+                    fill="none"
+                    stroke="currentcolor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.1"
+                  /></svg></span
+            ></a>
+          </div>
+
+          <div class="w-full flex flex-col items-center gap-5 pt-20">
+            <canvas id="canvas-1" class="w-full"></canvas>
+            <button
+              class="py-3 px-5 rounded-full bg-transparent border-[3px] border-black flex items-center gap-3 transition-all duration-300 hover:bg-black hover:text-white hover:fill-white"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                  />
+                </svg> </span
+              ><span class="text-xl font-semibold">Take a closer look</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="apps-section"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          id="apps-video"
+          class="w-full h-screen relative flex flex-col items-center justify-center bg-black"
+        >
+          <video
+            class="size-full object-cover object-center opacity-60 relative"
+            src="./assets/videos/apps.mp4"
+            muted
+            loop
+          ></video>
+          <div
+            id="apps-heading"
+            class="w-full max-w-[1000px] absolute flex flex-col gap-5 items-center text-white"
+          >
+            <h5 class="text-2xl font-bold leading-none">Apps</h5>
+            <h2 class="text-[5rem] leading-none font-bold text-center">
+              Free your desktop.<br />And your apps will follow.
+            </h2>
+          </div>
+        </div>
+
+        <div
+          id="apps-content"
+          class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40"
+        >
+          <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+            Your apps live in your space.
+          </h3>
+          <div class="w-[65%] flex flex-col gap-10 items-start">
+            <p class="sf-pro-text text-gray text-xl font-bold leading-normal">
+              With Apple Vision Pro, you have an infinite canvas that transforms
+              how you use the apps you love. Arrange apps anywhere and scale
+              them to the perfect size, making the workspace of your dreams a
+              reality — all while staying present in the world around you.
+              Browse the web in Safari, create a to-do list in Notes, chat in
+              Messages, and seamlessly move between them with a glance. You can
+              even bring your Mac workflows into Apple Vision Pro wirelessly
+              with Mac Virtual Display.
+            </p>
+            <button
+              class="py-3 px-6 rounded-full bg-orange text-white fill-white border-none flex items-center gap-3 transition-all duration-300 hover:bg-orange/90"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                  />
+                </svg> </span
+              ><span class="text-xl font-semibold">Learn more about apps</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="entertainment-section"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          id="entertainment-video"
+          class="w-full h-screen relative flex flex-col items-center justify-center bg-black"
+        >
+          <video
+            class="size-full object-cover object-center opacity-60 relative"
+            src="./assets/videos/entertainment.mp4"
+            muted
+            loop
+          ></video>
+          <div
+            id="entertainment-heading"
+            class="w-full max-w-[1000px] absolute flex flex-col gap-5 items-center text-white"
+          >
+            <h5 class="text-2xl font-bold leading-none">Entertainment</h5>
+            <h2 class="text-[5rem] leading-none font-bold text-center">
+              The ultimate theater.<br />Wherever you are.
+            </h2>
+          </div>
+        </div>
+
+        <div
+          id="entertainment-content"
+          class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40"
+        >
+          <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+            A new dimension for entertainment.
+          </h3>
+          <div class="w-[65%] flex flex-col gap-10 items-start">
+            <p class="sf-pro-text text-gray text-xl font-bold leading-normal">
+              Apple Vision Pro can transform any room into your own personal
+              theater. Expand your movies, shows, and games to your perfect size
+              and experience them in Spatial Audio. Apple Immersive Video puts
+              you in the center of the action with mind-blowing immersion. And
+              with more pixels than a 4K TV for each eye, you can enjoy stunning
+              content wherever you are — on a long flight or the couch at home.
+            </p>
+            <button
+              class="py-3 px-6 rounded-full bg-orange text-white fill-white border-none flex items-center gap-3 transition-all duration-300 hover:bg-orange/90"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                  />
+                </svg> </span
+              ><span class="text-xl font-semibold"
+                >Learn more about entertainment</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="memories-section"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          id="memories-video"
+          class="w-full h-screen relative flex flex-col items-center justify-center bg-black"
+        >
+          <video
+            class="size-full object-cover object-center opacity-60 relative"
+            src="./assets/videos/memories.mp4"
+            muted
+            loop
+          ></video>
+          <div
+            id="memories-heading"
+            class="w-full max-w-[1000px] absolute flex flex-col gap-5 items-center text-white"
+          >
+            <h5 class="text-2xl font-bold leading-none">Photos and Videos</h5>
+            <h2 class="text-[5rem] leading-none font-bold text-center">
+              Be in the moment.<br />All over again.
+            </h2>
+          </div>
+        </div>
+
+        <div
+          id="memories-content"
+          class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40"
+        >
+          <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+            Your memories come alive.
+          </h3>
+          <div class="w-[65%] flex flex-col gap-10 items-start">
+            <p class="sf-pro-text text-gray text-xl font-bold leading-normal">
+              Apple Vision Pro is Apple's first 3D camera. You can capture
+              magical spatial photos and spatial videos in 3D, then relive those
+              cherished moments like never before with immersive Spatial Audio.
+              Your existing library of photos and videos looks incredible at
+              remarkable scale. And panoramas wrap around you — making you feel
+              like you're standing right where you took them. You can also take
+              spatial videos with iPhone 15 Pro, then view them on Apple Vision
+              Pro.
+            </p>
+            <button
+              class="py-3 px-6 rounded-full bg-orange text-white fill-white border-none flex items-center gap-3 transition-all duration-300 hover:bg-orange/90"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                  />
+                </svg> </span
+              ><span class="text-xl font-semibold"
+                >Learn more about photos and videos</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="connection-section"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          id="connection-video"
+          class="w-full h-screen relative flex flex-col items-center justify-center bg-black"
+        >
+          <video
+            class="size-full object-cover object-center opacity-60 relative"
+            src="./assets/videos/connection.mp4"
+            muted
+            loop
+          ></video>
+          <div
+            id="connection-heading"
+            class="w-full max-w-[1000px] absolute flex flex-col gap-5 items-center text-white"
+          >
+            <h5 class="text-2xl font-bold leading-none">Connection</h5>
+            <h2 class="text-[5rem] leading-none font-bold text-center">
+              Get on the same page.<br />In the same space.
+            </h2>
+          </div>
+        </div>
+
+        <div
+          id="connection-content"
+          class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40"
+        >
+          <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+            Make meetings more meaningful.
+          </h3>
+          <div class="w-[65%] flex flex-col gap-10 items-start">
+            <p class="sf-pro-text text-gray text-xl font-bold leading-normal">
+              Apple Vision Pro makes it easy to collaborate and connect wherever
+              you are. FaceTime video tiles are life-size, and as new people
+              join, the call simply expands in your room. Or choose to use your
+              spatial Persona and feel like you are sharing the same space with
+              others. And in FaceTime, you can use apps to collaborate with
+              colleagues on documents simultaneously.
+            </p>
+            <button
+              class="py-3 px-6 rounded-full bg-orange text-white fill-white border-none flex items-center gap-3 transition-all duration-300 hover:bg-orange/90"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                  />
+                </svg> </span
+              ><span class="text-xl font-semibold"
+                >Learn more about connection</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="design-section"
+        class="bg-lightGray w-full relative flex flex-col items-center"
+      >
+        <div
+          id="design-content"
+          class="w-full max-w-[1000px] flex flex-col gap-5 items-center text-center pt-40 pb-24"
+        >
+          <h5 class="text-2xl font-bold leading-none">Design</h5>
+          <h2 class="text-[5rem] leading-none font-bold text-center">
+            Designed by Apple.
+          </h2>
+          <p
+            class="w-full max-w-[72%] pt-10 text-gray text-2xl font-semibold leading-normal"
+          >
+            Apple Vision Pro is the result of decades of experience designing
+            high-performance, mobile, and wearable devices — culminating in the
+            most ambitious product Apple has ever created. Apple Vision Pro
+            integrates incredibly advanced technology into an elegant, compact
+            form, resulting in an amazing experience every time you put it on.
+          </p>
+        </div>
+
+        <div
+          id="design-canvas"
+          class="w-full max-w-[1100px] h-screen relative flex flex-col items-center justify-center"
+        >
+          <div class="size-full overflow-hidden relative">
+            <canvas id="canvas-2" class="w-full h-[140%]"></canvas>
+          </div>
+
+          <div
+            id="design-canvas-texts"
+            class="w-full max-w-[1000px] min-h-[18rem] absolute flex items-center"
+          >
+            <p
+              class="text-[19px] leading-tight text-gray font-semibold absolute left-0 translate-y-12 opacity-0 w-[22%]"
+            >
+              <span class="text-black">Front.</span>&nbsp;A singular piece of
+              three-dimensionally formed laminated glass flows into an aluminum
+              alloy frame that curves to wrap around your face.
+            </p>
+
+            <p
+              class="text-[19px] leading-tight text-gray font-semibold absolute right-0 translate-y-12 opacity-0 w-[22%]"
+            >
+              <span class="text-black">Light Seal.</span>&nbsp;The Light Seal
+              gently flexes to conform to your face, delivering a precise fit
+              while blocking out stray light.
+            </p>
+
+            <p
+              class="text-[19px] leading-tight text-gray font-semibold absolute left-0 translate-y-16 opacity-0 w-[22%]"
+            >
+              <span class="text-black">Head bands.</span>&nbsp;The Solo Knit
+              Band provides cushioning, breathability, and stretch, and a Fit
+              Dial lets you adjust Apple Vision Pro precisely to your head. The
+              Dual Loop Band offers an additional option for a personalized fit.
+            </p>
+
+            <p
+              class="text-[19px] leading-tight text-gray font-semibold absolute left-0 translate-y-12 opacity-0 w-[22%]"
+            >
+              <span class="text-black">Power.</span>&nbsp;The external battery
+              supports up to 2 hours of general use and up to 2.5 hours of video
+              playback.
+            </p>
+
+            <p
+              class="text-[19px] leading-tight text-gray font-semibold absolute right-0 translate-y-12 opacity-0 w-[22%]"
+            >
+              <span class="text-black">Sound.</span>&nbsp;Speakers positioned
+              close to your ears deliver rich Spatial Audio while keeping you
+              aware of your surroundings.
+            </p>
+
+            <p
+              class="text-[19px] leading-tight text-gray font-semibold absolute left-0 translate-y-12 opacity-0 w-[22%]"
+            >
+              <span class="text-black">EyeSight.</span>&nbsp;An outward display
+              reveals your eyes while wearing Apple Vision Pro, letting others
+              know when you are using apps or fully immersed.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="design-close"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          class="w-full max-w-[2000px] px-16 pt-24 flex flex-col gap-10 items-center"
+        >
+          <div class="w-full grid grid-cols-2 gap-10">
+            <img
+              class="col-span-1 w-full object-cover object-center"
+              src="./assets/images/dcl1.jpg"
+              alt="Apple Vision Pro Close Look"
+            />
+            <img
+              class="col-span-1 w-full object-cover object-center"
+              src="./assets/images/dcl2.jpg"
+              alt="Apple Vision Pro Close Look"
+            />
+          </div>
+
+          <div class="w-full overflow-hidden">
+            <video
+              id="design-close-video"
+              src="./assets/videos/design-close-look.mp4"
+              muted
+              loop
+              class="w-full object-cover object-center"
+            ></video>
+          </div>
+
+          <div class="w-full max-w-[1000px] relative px-20 py-28 text-center">
+            <p
+              class="max-w-[72%] mx-auto text-gray text-[1.3rem] font-semibold leading-normal"
+            >
+              A singular piece of
+              <span class="text-black"
+                >three-dimensionally formed laminated glass</span
+              >
+              acts as an optical surface for the cameras and sensors that view
+              the world. It flows seamlessly into a
+              <span class="text-black">custom aluminum alloy frame</span> that
+              gently curves to wrap around your face while serving as an
+              attachment point for the
+              <span class="text-black">Light Seal.</span>
+            </p>
+          </div>
+
+          <div class="w-full relative flex flex-col items-center">
+            <img
+              class="w-auto object-cover object-center"
+              src="./assets/images/dcl3.jpg"
+              alt="Apple Vision Pro Close Look"
+            />
+
+            <button
+              class="py-3 px-6 rounded-full bg-orange text-white fill-white border-none flex items-center gap-3 transition-all duration-300 hover:bg-orange/90 absolute bottom-28"
+            >
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  width="22"
+                  height="22"
+                >
+                  <path
+                    d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                  />
+                </svg> </span
+              ><span class="text-xl font-semibold"
+                >Learn more about design</span
+              >
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="vision-section"
+        class="w-full relative flex flex-col items-center"
+      >
+        <div
+          id="vision-main"
+          class="w-full relative flex flex-col items-center"
+        >
+          <div
+            id="vision-video"
+            class="w-full h-screen relative flex flex-col items-center justify-center bg-black"
+          >
+            <video
+              class="size-full object-cover object-center opacity-60 relative"
+              src="./assets/videos/vision.mp4"
+              muted
+              loop
+            ></video>
+
+            <div
+              id="vision-heading"
+              class="w-full max-w-[1000px] absolute flex flex-col gap-5 items-center text-white"
+            >
+              <h5 class="text-2xl font-bold leading-none">visionOS</h5>
+              <h2 class="text-[5rem] leading-none font-bold text-center">
+                Apple's first spatial operating system.
+              </h2>
+            </div>
+          </div>
+
+          <div class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40">
+            <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+              Interaction designed for spatial computing.
+            </h3>
+            <p
+              class="w-[65%] sf-pro-text text-gray text-xl font-bold leading-normal"
+            >
+              Built on the foundation of macOS, iOS, and iPadOS, visionOS
+              enables powerful spatial experiences. Control Apple Vision Pro
+              with your eyes, hands, and voice — interactions feel intuitive and
+              magical. Simply look at an element, tap your fingers together to
+              select, and use the virtual keyboard or dictation to type.
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="vision-second"
+          class="w-full relative flex flex-col items-center"
+        >
+          <div class="w-full relative grid grid-cols-2 gap-10 px-16">
+            <img
+              class="col-span-1 w-full object-cover object-center"
+              src="./assets/images/vision-second-1.jpg"
+              alt="Vision Second Image 1"
+            />
+            <img
+              class="col-span-1 w-full object-cover object-center"
+              src="./assets/images/vision-second-2.jpg"
+              alt="Vision Second Image 2"
+            />
+          </div>
+
+          <div class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40">
+            <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+              Apps leap into life.
+            </h3>
+            <p
+              class="w-[65%] sf-pro-text text-gray text-xl font-bold leading-normal"
+            >
+              In visionOS, apps can fill the space around you, beyond the
+              boundaries of a display. They can be moved anywhere, scaled to the
+              perfect size, react to the lighting in your room, and even cast
+              shadows.
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="vision-slider"
+          class="w-full relative flex flex-col items-center"
+        >
+          <div class="slider w-full relative flex flex-col items-center px-16">
+            <div
+              class="group swiper-slider w-full max-w-[2000px] relative overflow-hidden"
+            >
+              <div class="swiper-wrapper w-full relative">
+                <div class="swiper-slide">
+                  <img
+                    class="size-full object-cover object-center"
+                    src="./assets/images/vision-slide-1.jpg"
+                    alt="Vision Slide 1 Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="size-full object-cover object-center"
+                    src="./assets/images/vision-slide-2.jpg"
+                    alt="Vision Slide 2 Image"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="size-full object-cover object-center"
+                    src="./assets/images/vision-slide-3.jpg"
+                    alt="Vision Slide 3 Image"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="swiper-button-next opacity-0 group-hover:text-white group-hover:opacity-100 transition-all"
+              ></div>
+              <div
+                class="swiper-button-prev opacity-0 group-hover:text-white group-hover:opacity-100 transition-all"
+              ></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40">
+            <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+              Expand your surroundings.
+            </h3>
+            <p
+              class="w-[65%] sf-pro-text text-gray text-xl font-bold leading-normal"
+            >
+              Environments let you transform the space around you, so apps can
+              extend beyond the dimensions of your room. Choose from a selection
+              of beautiful landscapes, or turn your room into a personal movie
+              theater with the Cinema Environment. The Digital Crown gives you
+              full control over how immersed you are.
+            </p>
+          </div>
+        </div>
+
+        <div
+          id="vision-last"
+          class="w-full relative flex flex-col items-center"
+        >
+          <img
+            class="w-full object-cover object-center px-16"
+            src="./assets/images/stay-connected.jpg"
+            alt="Vision Second Image 1"
+          />
+
+          <div class="w-full max-w-[1000px] relative flex gap-20 pt-20 py-40">
+            <h3 class="w-[35%] text-[2rem] font-bold leading-tight">
+              Stay connected to people around you.
+            </h3>
+
+            <div class="w-[65%] flex flex-col gap-10 items-start">
+              <p class="sf-pro-text text-gray text-xl font-bold leading-normal">
+                Apple Vision Pro helps you remain connected to those around you.
+                EyeSight reveals your eyes and lets those nearby know when
+                you're using apps or fully immersed in an experience. When
+                someone approaches, Apple Vision Pro simultaneously lets you see
+                the person and reveals your eyes to them.
+              </p>
+              <button
+                class="py-3 px-6 rounded-full bg-orange text-white fill-white border-none flex items-center gap-3 transition-all duration-300 hover:bg-orange/90"
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    width="22"
+                    height="22"
+                  >
+                    <path
+                      d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"
+                    />
+                  </svg> </span
+                ><span class="text-xl font-semibold"
+                  >Learn more about visionOS</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

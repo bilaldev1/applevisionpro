@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(../dist/assets/fonts/sf-pro-display_regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(../dist/assets/fonts/sf-pro-display_semibold.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "SF Pro Display";
+    src: url(../dist/assets/fonts/sf-pro-display_bold.woff2);
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(../dist/assets/fonts/sf-pro-text_light.woff2);
+    font-weight: 300;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(../dist/assets/fonts/sf-pro-text_regular.woff2);
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "SF Pro Text";
+    src: url(../dist/assets/fonts/sf-pro-text_semibold.woff2);
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  * {
+    font-family: "SF Pro Display", sans-serif;
+  }
+
+  .sf-pro-text {
+    font-family: "SF Pro Text", "SF Pro Display", sans-serif !important;
+  }
+
+  .w-inherit {
+    width: inherit;
+  }
+
+  .swiper-pagination {
+    width: auto !important;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 10px 4px;
+  }
+}
